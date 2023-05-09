@@ -4,16 +4,16 @@ import fetch from '@/config/fetch'
  * 登陆
  */
 
-export const login = data => fetch('/log/in', data, 'POST');
+export const login = data => fetch('/signup/log/in', data, 'POST');
 
 /**
  * 退出
  */
 
-export const signout = data => fetch('/user/logout', data, 'POST');
+export const signout = data => fetch('/signup/user/logout', data, 'POST');
 
-export const getSignupClasses = () => fetch('/user/getSignupClasses');
-export const modifyPwd = data => fetch('/user/modifyPwd', data, 'POST');
+export const getSignupClasses = () => fetch('/signup/user/getSignupClasses');
+export const modifyPwd = data => fetch('/signup/user/modifyPwd', data, 'POST');
 
 /**
  * 获取用户信息
