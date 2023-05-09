@@ -6,8 +6,8 @@
                 <Video
                     v-show="true"
                     :videoSrc="item.video"
-                    :width="800"
-                    :height="450"
+                    :width="600"
+                    :height="340"
                     :autoplay="false"
                     :controls="true"
                     :loop="false"

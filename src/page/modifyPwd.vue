@@ -1,8 +1,8 @@
 <template>
     <div>
         <head-top></head-top>
-        <el-row style="margin-top: 20px;">
-            <el-col :span="12" :offset="4">
+        <el-row style="margin-top: 20px;" type="flex" class="row-bg" justify="center">
+            <el-col :span="12">
                 <el-form :model="formData" :rules="rules" ref="formData" label-width="110px" class="demo-formData">
                     <el-form-item label="密码" prop="pwd">
                         <el-input type="password" auto-complete="off" v-model="formData.pwd" maxlength="20"></el-input>

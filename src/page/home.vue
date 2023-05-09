@@ -24,7 +24,7 @@
 	import headTop from '../components/headTop'
 	import tendency from '../components/tendency'
 	import dtime from 'time-formater'
-	import {userCount, orderCount, getUserCount, getOrderCount, adminDayCount, adminCount, hello} from '@/api/getData'
+	import {userCount, orderCount, getUserCount, getOrderCount, adminDayCount, adminCount} from '@/api/getData'
     export default {
     	data(){
     		return {
@@ -67,11 +67,6 @@
     			}).catch(err => {
     				console.log(err)
     			})
-                Promise.resolve(hello()).then(res => {
-                    console.log(res)
-                }).catch(err => {
-                    console.log(err)
-                })
     		},
     		async getSevenData(){
     			const apiArr = [[],[],[]];

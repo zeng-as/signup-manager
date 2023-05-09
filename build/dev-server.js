@@ -54,7 +54,7 @@ var context = config.dev.context
 
 switch(process.env.NODE_ENV){
     case 'local': var proxypath = 'http://localhost:10086'; break;
-    case 'online': var proxypath = 'http://elm.cangdu.org'; break;
+    // case 'online': var proxypath = 'https://www.szmyxdi.com/signup'; break;
 }
 var options = {
     target: proxypath,
